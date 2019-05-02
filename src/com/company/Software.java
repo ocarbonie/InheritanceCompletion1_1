@@ -29,4 +29,10 @@ public class Software extends Product {
     public void setOs(String os) {
         this.os = os;
     }
+    @Override
+    public String toString() {
+        return "Programmer:      " + programmer+ "\n" +
+                "Platform:        " + platform + "\n" +
+                "Os:              " + os + "\n";
+    }
 }

@@ -41,7 +41,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Code:                " + code + "\n" +
+        return "Code:               " + code + "\n" +
                 "Description:        " + description + "\n" +
                 "Price:              " + this.getFormattedPrice(price) + "\n";
     }
@@ -50,7 +50,6 @@ public class Product {
         NumberFormat formatter = new DecimalFormat("#0.00");
         return (formatter.format(p));
 
-        // Use the NumberFormat class to format the price to 2 decimal places
     }
 
     public static int getCount() {
